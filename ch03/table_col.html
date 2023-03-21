@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            table, th, td{
+                border: 1px solid #ccc;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            th, td{
+                width: 100px;
+                height: 30px;
+            }
+            /*thead{
+                background-color: #eee;
+            }*/
+        </style>
+    </head>
+    <body>
+        <table>
+            <colgroup>
+                <col style="background-color: #eee">
+                <col style="background: #0f0">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>부서번호</th>
+                    <th>부서명</th>
+                    <th>부서인원</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>관리부</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>전산실</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+h1{
+    color: green;
+    font-size: 3em;
+}
+h2{
+    color: #00f;
+}
+p{
+  font-family: 'Nanum Pen Script',cursive;
+}

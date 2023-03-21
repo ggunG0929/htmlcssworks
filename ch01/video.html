@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 관련 태그</title>
+</head>
+<body>
+    <!-- 재생 플레이어 활성화 : controls -->
+    <!-- 무음 자동 반복 재생 -->
+    <video src="./media/animal.mp4" width="500px" autoplay muted></video>
+
+    <!-- source태그를 함께 사용 :브라우저에서 지원이 안될경우 사용
+    poster 속성은 video가 재생 안될경우 대체 이미지(썸네일)-->
+    <!-- <video muted autoplay poster="./images/animal.PNG"> -->
+        <source src="./media/animal.mp4" type="video/mp4">
+    </video>
+    <p></p>
+    <!-- 외부영상 가져오기 -->
+    <div>
+        <a href="https://m.sports.naver.com/video/1041489" target="_blank">이청용 드리볼</a>
+    </div>
+</body>
+</html>
