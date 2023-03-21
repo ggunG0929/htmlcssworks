@@ -1,0 +1,23 @@
+.wrap{
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+h1{
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+}
+p{
+    border: 2px dotted #00f;
+    padding: 10px;  
+}
+.bg{
+    background: url("../images/yellow.jpg") no-repeat;
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    margin: 0 auto;
+    /*반지름의 길이*/
+    border-radius: 10px 15px 20px 30px;
+}
