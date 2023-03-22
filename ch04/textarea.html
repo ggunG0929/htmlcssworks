@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>textarea태그</title>
+        <style>
+            fieldset{
+                width: 500px;
+            }
+            textarea{
+                margin-top: 10px;
+                /* 임의로 지정 */
+                margin-left: 19px;
+            }
+            p{
+                margin: 10px 20px 10px 0;
+                /* 임의로 우측정렬 후 마진수정 */
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post">
+            <fieldset>
+                <legend>배송 업무</legend>
+                <!-- rows=보이는 행의 수, cols=글자수, placeholder=힌트문자 -->
+                <textarea name="memo" cols="60" rows="5" placeholder="배송시 요청사항을 적어주세요"></textarea>
+                <!-- <p><input type="submit" value="전송"></p> -->
+                <button type="submit">전송</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- 임의로 title 수정 -->
+        <title>로그인 폼2</title>
+        <style>
+            h2{
+                margin-left: 20px;
+            }
+            ul{
+                list-style: none;
+            }
+            ul li{
+                margin-bottom: 20px;
+            }
+            /* 임의로 넣음 */
+            #id{
+                padding-left: 16px;
+            }
+            #login{
+                padding-left: 184px; 
+            }
+        </style>
+    </head>
+    <body>
+        <h2>로그인 폼</h2>
+        <!-- login.php: 서버사이드(측) 언어 -->
+        <!-- 파이썬식 주소 -->
+        <form action="{% url 'common:login' %}" method="post">
+            <!-- name속성: 서버페이지가 처리하는 요소 -->
+            <ul>
+                <li id="id">
+                    <label>아이디</label>
+                    <input type="text" name="id">
+                </li>
+                <li>
+                    <label>비밀번호</label>
+                    <input type="password" name="passwd">
+                </li>
+                <li id="login">
+                    <input type="submit" value="로그인">
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>
