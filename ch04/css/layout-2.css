@@ -1,0 +1,36 @@
+*{margin: 0; padding: 0;}
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+    /* 너비는 표기하지 않으면 자동 설정됨 */
+    /* padding10과 border1때문에 작게 그려야 전체크기가 1000됨 */
+    /* width: 978px; */
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+section{
+    width: 630px;
+    height: 600px;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 10px;
+}
+aside{
+    /* 보기좋게 +5함 */
+    width: 325px;
+    height: 600px;
+    border: 1px solid #ccc;
+    float: right;
+    padding: 10px;
+    background-color: #eee;
+}
+footer{
+    /* width: 978px; */
+    height: 100px;
+    border: 1px solid #ccc;
+    clear: both;
+    padding: 10px;
+}

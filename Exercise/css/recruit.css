@@ -1,0 +1,29 @@
+body{
+    background-color: #02233b;
+    padding: 10px;
+}
+#container{
+    /* 선생님은 크기지정
+    width: 700px;
+    margin: 0 auto; */
+    height: 700px;
+    padding: 20px;
+    background: white url(../images/mic.png) no-repeat right bottom fixed;
+}
+h1{
+    background-color: #004344;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    font-style: italic;
+}
+h3{
+    color: red;
+}
+ul li{
+    list-style: none;
+    line-height: 2;
+}
