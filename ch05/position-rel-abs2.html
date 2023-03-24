@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>position 속성2</title>
+        <style>
+            body{
+                /* 기본마진 8에서 100으로 바뀜 108이 되는 것이 아님 */
+                margin: 100px;
+            }
+            #wrap{
+                width: 300px;
+                height: 300px;
+                border: 1px solid #ccc;
+                /* 부모 요소로 기준 정함 */
+                position: relative;
+            }
+            .box{
+                width: 50px;
+                height: 50px;
+                background: #00f;
+                color: #fff;
+                position: absolute;
+            }
+            .cord1{top: 0; left: 0;}
+            .cord2{top: 0; right: 0;}
+            .cord3{bottom: 0; left: 0;}
+            .cord4{bottom: 0; right: 0;}
+            .cord5{top: 100px; left: 100px;}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- id는 자바스크립트에서 많이 쓰임
+            html에서는 class에서 띄어쓰기로
+            css에서도 .로 -->
+            <!-- <div class="box" id="cord1">1</div> -->
+            <div class="box cord1">1</div>
+            <div class="box cord2">2</div>
+            <div class="box cord3">3</div>
+            <div class="box cord4">4</div>
+            <div class="box cord5">5</div>
+        </div>
+    </body>
+</html>

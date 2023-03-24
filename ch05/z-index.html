@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>z-index 속성</title>
+        <style>
+            /* z-index값이 크면 위에 쌓인다. */
+            div{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                color: white;
+            }
+            /* z-index값을 명시하지 않으면 1(가장 작은 값)부터 시작 */
+            .box1{
+                background-color: brown;
+                top: 50px;
+                left: 50px;
+                z-index: 2;
+            }
+            .box2{
+                background-color: aqua;
+                top: 70px;
+                left: 110px;
+                z-index: 3;
+            }
+            .box3{
+                background: blueviolet;
+                top: 110px;
+                left: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </body>
+</html>
