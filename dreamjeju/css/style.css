@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 /* 전체 스타일 */
 *{
     margin: 0;
@@ -13,6 +14,7 @@ main{
     margin: 0 auto;
     box-sizing: border-box;
 }
+
 /* header영역 스타일 */
 header{
     height: 80px;
@@ -23,6 +25,7 @@ header #logo{
     float: left;
     padding-left: 30px;
     line-height:80px;
+    font-family: 'Merienda', cursive;
 }
 #logo h1 a{
     text-decoration: none;
@@ -111,6 +114,7 @@ footer #bottomMenu{
 #bottomMenu li:nth-child(4){
     border: none;
 }
+
 /* product 스타일 */
 #product p{
     line-height: 2;
@@ -151,8 +155,83 @@ footer #bottomMenu{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
-#package table, th, td{
+#package table, #package th, #package td{
     border: 1px solid #ccc;
     border-collapse: collapse;
     padding: 10px 20px;
+}
+
+/* Q&A 스타일 */
+#board section h2{
+    margin: 30px 10px;
+    text-align: center;
+}
+/* 임의로 부모 자식 상대 포지션 적용
+.table{
+    position: relative;
+    height: 360px;
+} */
+#board #tbl_board{
+    border: 1.5px solid rgb(9, 90, 9);
+    border-collapse: collapse;
+    width: 700px;
+    margin: 0 auto 20px;
+}
+#tbl_board thead{
+    background-color: beige;
+}
+/* 임의로 표 안선에 색 */
+#tbl_board th, #tbl_board td{
+    border: 1.5px solid rgb(9, 90, 9);
+}
+#tbl_board td:nth-child(1), td:nth-child(3), td:nth-child(4){
+    text-align: center;
+}
+#tbl_board td:first-child{
+    width: 50px;
+}
+.btn{
+    text-align: right;
+    margin-right: 250px;
+    /* position: absolute;
+    bottom: -50px;
+    right: 250px; */
+}
+.btn button{
+    padding: 10px 15px;
+    margin-bottom: 50px;
+}
+
+/* about Me 스타일 */
+#profile{
+    width: 750px;
+}
+#profile h2{
+    color: yellowgreen;
+}
+#profile section{
+    margin: 20px auto;
+    padding: 10px;
+}
+#profile section ul li{
+    list-style: none;
+}
+#profile #intro img{
+    height: 160px;
+    padding: 10px;
+    margin: 20px;
+    float: left;
+}
+#profile #intro p{
+    height: 160px;
+    line-height: 65px;
+    padding: 10px;
+    margin: 20px;
+}
+#profile #career{
+    clear: both;
+}
+#profile #career ul li, #skill ul li{
+    padding: 10px 10px 10px 180px;
+    margin: 20px;
 }
