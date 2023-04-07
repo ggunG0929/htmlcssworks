@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body{
+    background: yellow;
+    box-sizing: border-box;
+}
+/* 모바일 기준 */
+#container{
+    width: 300px;
+    margin: 0 auto;
+}
+.card{
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    position: relative;
+    margin: 10px;
+}
+.word{
+    position: absolute;
+    top: 300px;
+    left: 5px;
+    text-align: center;
+    /* 임의로 크기지정함 */
+    width: 275px;
+    height: 140px;
+    padding: 10px;
+}
+h2{
+    font-size: 1.3em;
+}
+/* 태블릿 기준 */
+@media screen and (min-width: 768px){
+    #container{
+        width: 550px;
+    }
+    .card{
+        width: 575px;
+        height: 250px;
+        position: relative;
+    }
+    .word{
+        position: absolute;
+        top: 50px;
+        left: 290px;
+    }
+}
+/* PC 기준 */
+@media screen and (min-width: 1024px){
+    #container{
+        width: 1800px;
+    }
+    .card{
+        float: left;
+        margin: 0 10px;
+    }
+}

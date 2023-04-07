@@ -1,0 +1,120 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#container{
+    width: 100%;
+}
+
+/* header 스타일 */
+header{
+    width: 100%;
+    height: 320px;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #000;
+    /* position: fixed; */ /* 상단메뉴 고정 */
+}
+nav #main-nav{
+    list-style: none;
+    text-align: center;
+}
+nav #main-nav li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 30px;
+}
+nav #main-nav li a{
+    text-decoration: none;
+    color: white;
+}
+nav #main-nav li a:hover{
+    color: yellow;
+    /* 임의로 폰트 굵게 */
+    font-weight: bold;
+}
+#main-pic img{
+    width: 100%;
+    height: 260px;
+}
+
+/* section 영역 */
+section{
+    height: 330px;
+    margin: 0 auto;
+    padding: 15px 5%;
+}
+/* section:nth-child(2n+1){ */ /* 섹션의 부모인 컨테이너의 첫번째 자식은 헤더, 두번째부터 섹션들 */
+section:nth-of-type(2n){ /* 섹션 형제 중에 짝수번째 */
+    background: #eee;
+}
+section .page-title{
+    margin: 20px 0;
+}
+section p{
+    line-height: 3;
+}
+section .content .photo{
+    display: none;
+}
+/* 임의로 시계 글자굵기 */
+#intro .content .text span{
+    font-weight: bold;
+}
+#choice .content h2{
+    /* line-height: 2.5em; */
+    margin-bottom: 20px;
+/* 임의로 크기 줄임 */
+font-size: 1.2em;
+}
+#choice .content ol{
+    padding-left: 30px;
+}
+#choice .content ol li{
+    line-height: 2;
+}
+
+/* footer 스타일 */
+footer{
+    height: 80px;
+    border-top: 2px solid #222;
+}
+#bottom-menu{
+    list-style: none;
+    margin: 10px 10px 10px 40px;
+}
+#bottom-menu li{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+}
+#bottom-menu li a{
+    text-decoration: none;
+    color: #444;
+}
+#bottom-menu li:last-child{
+    border: none;
+}
+
+@media screen and (min-width: 780px){
+    header{height: 350px;}
+    #main-pic img{height: 290px;}
+    section{height: 400px;}
+    #intro, #choice{float: left; width: 50%;}
+    #map{clear: both;}
+    #map .photo{display: block; float: left; margin-right: 50px;}
+}
+@media screen and (min-width: 1200px){
+    #container{width: 1200px; margin: 0 auto;}
+    header{height: 380px;}
+    #main-pic img{height: 320px;}
+    section{height: 350px;}
+    #intro, #choice, #map{width: 100%; padding: 10px 5%;}
+    section .content .photo{display: block;}
+    #intro .photo, #map .photo{float: left; margin-right: 20px;}
+    #choice .photo{float: right;}
+    section p{line-height: 2.5;}
+    /* 임의로 줄 간격 띄움 */
+    #choice .content ol li{line-height: 2.5;} 
+}
