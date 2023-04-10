@@ -21,14 +21,12 @@ footer #bottomMenu{padding-top: 7px;}
 #profile{width: 100%;}
 #profile h1{text-align: center; margin: 10px auto; padding-bottom: 10px;}
 #profile h2{color: yellowgreen; text-shadow: 5px 5px 15px rgb(255, 255, 0); padding: 5px; margin-top: 10px;}
-#profile section{margin: 20px auto; padding: 10px;}
+#profile section{margin: 0 auto; padding: 10px;}
 #profile section:nth-child(2n){background: rgba(255,145,0,0.1);}
 #profile section ul li{list-style: none; padding: 10px; margin: 10px;}
 
 #profile #intro #cont{height: 160px; position: relative;}
-#profile #intro #cont img{display: none;
-    /* height: 160px; padding: 10px; margin: 20px auto; text-align: center;} */
-    float: left;}
+#profile #intro #cont img{height: 150px; float: left; padding: 15px 10px 0 0; display: none;}
 #cont ul{padding-top: 10px;}
 #cont a{text-decoration: none; color: rgb(255,145,0); position: absolute; right: 15px; bottom: 10px;}
 #cont a:hover{background: yellow;
@@ -46,7 +44,7 @@ footer #bottomMenu{padding-top: 7px;}
     nav #topMenu, footer #bottomMenu{text-align: center;}
     #topMenu li{font-size: large;}
     section ul{margin-left: 150px;}
-    #profile #intro img{display: block;}
+    #profile #intro #cont img{display: block; margin-left: 30px;}
     #cont ul{padding-top: 30px;}
 }
 @media screen and (min-width: 900px){
