@@ -2,47 +2,56 @@
 #container{width: 100%; margin: 0 auto;}
 hr{border-color: yellow;}
 
-header{height: 80px; background: rgb(255, 145, 0);}
-nav{line-height: 80px;}
-nav #topMenu{list-style: none; text-align: left;}
-#topMenu li{display: inline-block; padding: 0 10px; font-size: small;}
-#topMenu li:nth-child(1){padding-left: 20px;}
-#topMenu li a{text-decoration: none; color: white;}
+header, footer{width: 100%; background: rgb(255, 145, 0)}
+header{height: 60px;}
+header nav{line-height: 60px;}
+nav #topMenu, footer #bottomMenu{list-style: none; text-align: left;}
+nav #topMenu{padding: 0 10px;}
+#topMenu li, #bottomMenu li{display: inline-block; padding: 0 10px;}
+#topMenu li{margin: 0 20px;}
+#topMenu li a, #bottomMenu li a{text-decoration: none; color: white;}
 #topMenu li a:hover{color: greenyellow; font-weight: 800;}
-
-footer{width: 100%; height: 60px; background: rgb(255, 145, 0);}
-footer #bottomMenu{list-style: none; padding: 20px; text-align: left;}
-#bottomMenu li{display: inline-block; border-right: 1px solid white; padding: 0 10px; font-size: x-small;}
-#bottomMenu li:last-child{border: none;}
-#bottomMenu li a{text-decoration: none; color: white;}
+footer{height: 40px;}
+footer #bottomMenu{padding-top: 7px;}
+#bottomMenu li{border-right: 1px solid white; font-size: x-small;}
+#bottomMenu li:first-child{margin-left: 15px;}
+#bottomMenu li:last-child{border: none; padding-left: 5px; margin-right: 15px;}
 #bottomMenu li a:hover{text-decoration: underline;}
 
 #profile{width: 100%;}
-#profile h1{text-align: center; margin: 10px auto; padding: 10px; line-height: 2;}
-#profile h2{color: yellowgreen; margin-top: 10px;}
+#profile h1{text-align: center; margin: 10px auto; padding-bottom: 10px;}
+#profile h2{color: yellowgreen; text-shadow: 5px 5px 15px rgb(255, 255, 0); padding: 5px; margin-top: 10px;}
 #profile section{margin: 20px auto; padding: 10px;}
 #profile section:nth-child(2n){background: rgba(255,145,0,0.1);}
 #profile section ul li{list-style: none; padding: 10px; margin: 10px;}
 
-#profile #intro{position: relative; height: 400px; display: inline-block;}
-#profile #intro img{
+#profile #intro #cont{height: 160px; position: relative;}
+#profile #intro #cont img{display: none;
     /* height: 160px; padding: 10px; margin: 20px auto; text-align: center;} */
     float: left;}
-#intro p{height: 160px; line-height: 3; padding: 10px; margin: 10px;}
-/* #intro #git{position: absolute; left: 150px; bottom: 15px;} */
-#intro a{width: 80px; text-decoration: none; color: yellowgreen; position: absolute; left: 150px; bottom: 15px;}
+#cont ul{padding-top: 10px;}
+#cont a{text-decoration: none; color: rgb(255,145,0); position: absolute; right: 15px; bottom: 10px;}
+#cont a:hover{background: yellow;
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+#profile #thanks{margin-bottom: 0;}
+#profile #thanks #box{width: 160px; color: yellowgreen; text-shadow: 5px 5px 15px yellow; animation: moving 2s alternate infinite; padding: 20px; margin-top: 10px;}
+#profile #thanks #box h3{text-align: center;}
+#profile #thanks p{color:rgb(255, 145, 0); text-align: right; padding-bottom: 20px; margin-right: 15px;}
 @media screen and (min-width: 768px){
-    #topMenu li{font-size: medium;}
-    #bottomMenu li{font-size: small;}
-    .content{text-align: center;}
-    #profile #intro{height: 330px; width: 700px; position: relative;}
-    #profile #intro img{float: left;}
-    #intro p{text-align: center;}
-    #profile #intro a{position: absolute; bottom: 15px; right: 30px; clear: both;}
-    #topMenu li:nth-child(1){padding-left: 10;}
+    nav #topMenu, footer #bottomMenu{text-align: center;}
+    #topMenu li{font-size: large;}
+    section ul{margin-left: 150px;}
+    #profile #intro img{display: block;}
+    #cont ul{padding-top: 30px;}
 }
 @media screen and (min-width: 900px){
-    #topMenu, #bottomMenu{text-align: right;}
-    #topMenu li{font-size: large;}
-    #bottomMenu li{font-size: medium;}
+    nav #topMenu, footer #bottomMenu{text-align: right;}
+    section{width: 900px;}
+    section ul{margin-left: 300px;}
 }
+@keyframes moving {from{transform: rotate(15deg);}to{transform: rotate(-15deg);}}
