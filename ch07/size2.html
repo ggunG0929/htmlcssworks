@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>가변크기</title>
+        <style>
+            #wrap {
+                width: 90%;
+                /* width: 960px; */
+                height: 500px;
+                margin: 0 auto;
+                border: 4px solid #000;
+            }
+            .container {
+                /* 특정 사이즈일때 양쪽을 30px씩 뺀다고 가정하면 900px ÷ 960px */
+                width: 93.75%;
+                /* width: 900px; */
+                height: 492px;
+                margin: 0 auto;
+                border: 4px solid #000;
+            }
+            .container div {
+                display: inline-block;
+                height: 100%;
+            }
+            .container div:first-child {
+                /* 특정 사이즈일때의 3분의 1을 퍼센트로 환산 300px ÷ 900px */
+                width: 33.3%;
+                /* width: 300px; */
+                background: #0f0;
+            }
+            .container div:first-child+div {
+                /* 600px ÷ 900px */
+                width: 66.7%;
+                /* width: 600px; */
+                background: #00f;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="container">
+                <!-- div사이에 엔터가 있으면 파랑영역이 밑으로 내려감 -->
+                <div></div><div></div>
+            </div>
+        </div>
+    </body>
+</html>
